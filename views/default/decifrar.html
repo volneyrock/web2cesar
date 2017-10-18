@@ -9,7 +9,10 @@
 
 <div class="panel panel-default">
   <div class="panel-heading">Resultado:</div>
-  <div class="panel-body">
-    {{=message}}
+  <div id="foo" class="panel-body to-copy">
+    {{=XML(message)}}
+  </div>
+  <div class="panel-footer">
+    <button type="button" class="btn btn-info" data-clipboard-target="#foo">Copiar</button>
   </div>
 </div>
