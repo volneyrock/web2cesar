@@ -1,0 +1,9 @@
+{{extend 'layout.html'}}
+
+{{block title}}
+  <h3>{{=request.function}}</h3>
+{{end}}
+
+
+{{=BEAUTIFY(form)}}
+{{=message}}

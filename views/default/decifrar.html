@@ -1,0 +1,15 @@
+{{extend 'layout.html'}}
+
+{{block title}}
+  <h3>{{=request.function}}</h3>
+{{end}}
+
+
+{{=BEAUTIFY(form)}}
+
+<div class="panel panel-default">
+  <div class="panel-heading">Resultado:</div>
+  <div class="panel-body">
+    {{=message}}
+  </div>
+</div>
